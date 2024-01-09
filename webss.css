@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background: linear-gradient(to right, #b8ac88, #8fbdeb);
   }
   
   /* Style the header */
@@ -43,3 +44,11 @@ body {
     color: black;
   }
  
+.logo {
+  position: absolute;
+  bottom: 10px;
+  right: 40px; 
+  width: 170px; 
+  height: auto;
+}
+
