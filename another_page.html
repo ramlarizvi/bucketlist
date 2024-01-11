@@ -9,13 +9,17 @@
 <body>
 
 
-
-    
-
-    <div class="navbar">
-        <a href="webss.html">Back to Home</a>
-        <!-- Add more navigation links if needed -->
-    </div>  
+  <div class="navbar">
+    <img src="logo2.png" alt="logo" class="logo">
+  
+  
+    <a href="webss.html">Home</a>
+      
+    <a href="another_page.html">Sign Up</a>
+    <a href="list.html">Bucketlist</a>
+  
+  </div>
+  
 
     <form action="action_page.php" style="border:1px solid #ccc">
         <div class="container">
@@ -44,7 +48,30 @@
           </div>
         </div>
       </form>
-    <script src="webss.js"></script>
+    <script src="another_page.js"></script>
+    <script>
+      function cancelSignUp() {
+        // Add code to handle cancel action if needed
+        alert("Sign up canceled");
+      }
+
+      function registerUser() {
+        // Add code to handle user registration
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("psw").value;
+        var confirmPassword = document.getElementById("psw-repeat").value;
+
+        // Check if passwords match
+        if (password !== confirmPassword) {
+          alert("Passwords do not match");
+          return;
+        }
+
+        // Add code to register the user (for demonstration purposes)
+        alert("User registered!\nEmail: " + email);
+      }
+    </script>
+      
 
 </body>
 </html>
